@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PanI</title>
+<script>
+
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+<style>
+
+</style>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+<link href='style.css' rel='stylesheet'>
+<body>
+
+<div class="top-bar"></div>
+<nav class="navbare">
+<div class="container content">
+    <div class="container row justify-content-center">
+      <div class="text-center p-2">
+            <div class="" id="Pani"><h1>Paní</h1></div>
+            <div>
+            <a class="nav-link " id="NavLink" href="index.html">LuminEyE</a>
+            </div>
+      </div>
+      <div class="dropdown p-2" id="Drop_Pani">
+        <button onclick="myFunction()" class="dropbtn">Kategorie</button>
+        <div id="myDropdown" class="dropdown-content text-center">
+          <a href="Pan.html">Pan</a>
+          <a href="Pani.html">Paní</a>
+         
+        </div>
+      </div>
+</nav>
+
+
+
+
+<div class="container content obal">
+  <div class="mujKontejner">
+    <div class="mujGrid">
+      <div class="grid-item text-left">
+        <img src="Harryovky.png" alt="img1" class="img-fluid">
+        <strong>Brýle Harryho Pottera</strong>
+        <p class="small-textik">Aktuální cena:</p>
+        <p class="small-textik cena_text">621kč</p>
+      </div>
+    </div>
+     <div class="mujGrid">
+      <div class="grid-item text-left">
+        <img src="Harryovky.png" alt="img1" class="img-fluid">
+        <strong>Brýle Harryho Pottera</strong>
+        <p class="small-textik">Aktuální cena:</p>
+        <p class="small-textik cena_text">781kč</p>
+      </div>
+    </div>
+    <div class="mujGrid">
+      <div class="grid-item text-left">
+        <img src="Harryovky.png" alt="img1" class="img-fluid">
+        <strong>Brýle Harryho Pottera</strong>
+        <p class="small-textik">Aktuální cena:</p>
+        <p class="small-textik cena_text">512kč</p>
+      </div>
+    </div>
+
+    <div class="mujGrid">
+      <div class="grid-item text-left">
+        <img src="Harryovky.png" alt="img1" class="img-fluid">
+        <strong>Brýle Harryho Pottera</strong>
+        <p class="small-textik">Aktuální cena:</p>
+        <p class="small-textik cena_text">320kč</p>
+      </div>
+    </div>
+     <div class="mujGrid">
+      <div class="grid-item text-left">
+        <img src="Harryovky.png" alt="img1" class="img-fluid">
+        <strong>Brýle Harryho Pottera</strong>
+        <p class="small-textik">Aktuální cena:</p>
+        <p class="small-textik cena_text">650kč</p>
+      </div>
+    </div>
+    <div class="mujGrid">
+      <div class="grid-item text-left">
+        <img src="Harryovky.png" alt="img1" class="img-fluid">
+        <strong>Brýle Harryho Pottera</strong>
+        <p class="small-textik">Aktuální cena:</p>
+        <p class="small-textik cena_text">650kč</p>
+      </div>
+    </div>
+
+
+    <div class="mujGrid">
+      <div class="grid-item text-left">
+        <img src="Harryovky.png" alt="img1" class="img-fluid">
+        <strong>Brýle Harryho Pottera</strong>
+        <p class="small-textik">Aktuální cena:</p>
+        <p class="small-textik cena_text">750kč</p>
+      </div>
+    </div>
+     <div class="mujGrid">
+      <div class="grid-item text-left">
+        <img src="Harryovky.png" alt="img1" class="img-fluid">
+        <strong>Brýle Harryho Pottera</strong>
+        <p class="small-textik">Aktuální cena:</p>
+        <p class="small-textik cena_text">9214kč</p>
+      </div>
+    </div>
+    <div class="mujGrid">
+      <div class="grid-item text-left">
+        <img src="Harryovky.png" alt="img1" class="img-fluid">
+        <strong>Brýle Harryho Pottera</strong>
+        <p class="small-textik">Aktuální cena:</p>
+        <p class="small-textik cena_text">6480kč</p>
+      </div>
+    </div>
+     
+     
+     
+  </div>
+</div>
+<footer class="text-center">
+  <p>Zaregistrujte se do našeho LuminEyE klubu a získejte 15% slevu na nákup nad 1000kč !!</p>
+  <h5>Váš LuminEyE nejlepší obchod se slunečnímy brýlemi</h5>          
+  </footer>
+</body>
+</html>
