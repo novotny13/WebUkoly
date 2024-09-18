@@ -1,0 +1,16 @@
+M:\Coffe\CoffeList\CoffeList\bin\Debug\net8.0-windows\CoffeList.exe
+M:\Coffe\CoffeList\CoffeList\bin\Debug\net8.0-windows\CoffeList.deps.json
+M:\Coffe\CoffeList\CoffeList\bin\Debug\net8.0-windows\CoffeList.runtimeconfig.json
+M:\Coffe\CoffeList\CoffeList\bin\Debug\net8.0-windows\CoffeList.dll
+M:\Coffe\CoffeList\CoffeList\bin\Debug\net8.0-windows\CoffeList.pdb
+M:\Coffe\CoffeList\CoffeList\obj\Debug\net8.0-windows\CoffeList.csproj.GenerateResource.cache
+M:\Coffe\CoffeList\CoffeList\obj\Debug\net8.0-windows\CoffeList.GeneratedMSBuildEditorConfig.editorconfig
+M:\Coffe\CoffeList\CoffeList\obj\Debug\net8.0-windows\CoffeList.AssemblyInfoInputs.cache
+M:\Coffe\CoffeList\CoffeList\obj\Debug\net8.0-windows\CoffeList.AssemblyInfo.cs
+M:\Coffe\CoffeList\CoffeList\obj\Debug\net8.0-windows\CoffeList.csproj.CoreCompileInputs.cache
+M:\Coffe\CoffeList\CoffeList\obj\Debug\net8.0-windows\CoffeList.dll
+M:\Coffe\CoffeList\CoffeList\obj\Debug\net8.0-windows\refint\CoffeList.dll
+M:\Coffe\CoffeList\CoffeList\obj\Debug\net8.0-windows\CoffeList.pdb
+M:\Coffe\CoffeList\CoffeList\obj\Debug\net8.0-windows\CoffeList.genruntimeconfig.cache
+M:\Coffe\CoffeList\CoffeList\obj\Debug\net8.0-windows\ref\CoffeList.dll
+M:\Coffe\CoffeList\CoffeList\obj\Debug\net8.0-windows\CoffeeApp.Form1.resources
