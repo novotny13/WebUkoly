@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "kyJxS5vw5rM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ADMIN\\Desktop\\CoffeList\\CoffeList\\CoffeList.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ADMIN\\.nuget\\packages\\system.io.pipelines\\9.0.0-rc.1.24431.7\\system.io.pipelines.9.0.0-rc.1.24431.7.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\system.text.encodings.web\\9.0.0-rc.1.24431.7\\system.text.encodings.web.9.0.0-rc.1.24431.7.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\system.text.json\\9.0.0-rc.1.24431.7\\system.text.json.9.0.0-rc.1.24431.7.nupkg.sha512"
+  ],
+  "logs": []
+}
