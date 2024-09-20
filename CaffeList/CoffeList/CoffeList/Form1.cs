@@ -72,7 +72,7 @@ namespace CoffeeList
                 using (HttpClient client = new HttpClient())
                 {
                    
-                    var byteArray = Encoding.ASCII.GetBytes("<username>:<password>");
+                       var byteArray = Encoding.ASCII.GetBytes("Coffe:Kafe");
                     client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", Convert.ToBase64String(byteArray));
 
                     var jsonString = await client.GetStringAsync("http://ajax1.lmsoft.cz/procedure.php?cmd=getTypesList");
