@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #chatBox {
+            width: 500px;
+            height: 700px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow-y: auto;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            background-color: #f9f9f9;
+            margin-bottom: 10px;
+        }
+
+        #messages {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .serverMessage {
+           
+            text-align: left;
+            margin: 5px 0;
+            color: #007bff;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .userMessage {
+            text-align: right;
+            margin: 5px 0;
+            color: #28a745;
+        }
+
+        #inputArea {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        #messageInput {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+
+        #sendMessage {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #sendMessage:hover {
+            background-color: #0056b3;
+        }
+
+        #connect {
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        #connect:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>WebSocket Test</h1>
+    
+    <button id="connect">Connect</button>
+
+    <div id="chatBox">
+        <div id="messages"></div>
+    </div>
+
+    <div id="inputArea">
+        <input type="text" id="messageInput" placeholder="Zadejte svou zprávu...">
+        <button id="sendMessage">Send</button>
+    </div>
+
+    <script>
+        let socket;
+
+        document.getElementById('connect').onclick = function() {
+            socket = new WebSocket('ws://dev.spsejecna.net:20450/');
+
+            socket.onopen = function() {
+                document.getElementById('messages').innerHTML += '<div>Connected to server</div>';
+            };
+
+            socket.onmessage = function(event) {
+                document.getElementById('messages').innerHTML += '<div class="serverMessage"> ' + event.data + '</div>';
+            };
+
+            socket.onclose = function() {
+                document.getElementById('messages').innerHTML += '<div>Connection closed</div>';
+            };
+
+            socket.onerror = function(event) {
+                document.getElementById('messages').innerHTML += '<div>Error: ' + JSON.stringify(event) + '</div>';
+            };
+        };
+
+        document.getElementById('sendMessage').onclick = function() {
+            const input = document.getElementById('messageInput');
+            const message = input.value;
+            if (socket && socket.readyState === WebSocket.OPEN) {
+                socket.send(message);
+                document.getElementById('messages').innerHTML += '<div class="userMessage">You: ' + message + '</div>';
+                input.value = ''; // Vymaže textové pole po odeslání
+            } else {
+                alert('Connection is not open');
+            }
+        };
+    </script>
+</body>
+</html>
